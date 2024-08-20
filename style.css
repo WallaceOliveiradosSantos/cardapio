@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #ff6347;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+#cartButton {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#cartButton:hover {
+    background-color: #0056b3;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.menu, .beverages {
+    width: 45%;
+}
+
+.menu h2, .beverages h2 {
+    text-align: center;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.pizza, .beverage {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #ff6347;
+}
+
+.pizza h3, .beverage h3 {
+    margin-top: 0;
+    color: #ff6347;
+}
+
+.pizza p, .beverage p {
+    margin: 5px 0;
+}
+
+.pizza .price {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.pizza button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pizza button:hover {
+    background-color: #218838;
+}
+
+#cartButton {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+#cartButton:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cart h2 {
+    color: #ff6347;
+    margin-top: 0;
+}
+
+#cartItems {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cartItems li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#cartItems li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#cartItems li button:hover {
+    background-color: #c82333;
+}
+
+.beverage .price {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.beverage button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.beverage button:hover {
+    background-color: #218838;
+}

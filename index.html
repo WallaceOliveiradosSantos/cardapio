@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio de Pizzas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sistema.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Pizzaria Sabor da Terra</h1>
+        <button id="cartButton">Ver Carrinho</button>
+    </header>
+
+    <div class="menu-container">
+        <div class="menu">
+            <h2>Cardápio de Pizzas</h2>
+            <div class="pizza">
+                <h3>Pizza Margherita</h3>
+                <p>Queijo, tomate e manjericão</p>
+                <p class="price">R$ 30,00</p>
+                <button class="add-to-cart" data-name="Pizza Margherita" data-price="30">Adicionar ao Carrinho</button>
+            </div>
+            <div class="pizza">
+                <h3>Pizza Calabresa</h3>
+                <p>Queijo, calabresa e cebola</p>
+                <p class="price">R$ 35,00</p>
+                <button class="add-to-cart" data-name="Pizza Calabresa" data-price="35">Adicionar ao Carrinho</button>
+            </div>
+            <div class="pizza">
+                <h3>Pizza Quatro Queijos</h3>
+                <p>Queijo mussarela, gorgonzola, parmesão e provolone</p>
+                <p class="price">R$ 40,00</p>
+                <button class="add-to-cart" data-name="Pizza Quatro Queijos" data-price="40">Adicionar ao Carrinho</button>
+            </div>
+            <div class="pizza">
+                <h3>Pizza Portuguesa</h3>
+                <p>Queijo, presunto, ovos, cebola e azeitonas</p>
+                <p class="price">R$ 38,00</p>
+                <button class="add-to-cart" data-name="Pizza Portuguesa" data-price="38">Adicionar ao Carrinho</button>
+            </div>
+            <div class="pizza">
+                <h3>Pizza Frango com Catupiry</h3>
+                <p>Frango desfiado, catupiry e milho</p>
+                <p class="price">R$ 42,00</p>
+                <button class="add-to-cart" data-name="Pizza Frango com Catupiry" data-price="42">Adicionar ao Carrinho</button>
+            </div>
+            <div class="pizza">
+                <h3>Pizza Napolitana</h3>
+                <p>Queijo, tomate, alho e orégano</p>
+                <p class="price">R$ 32,00</p>
+                <button class="add-to-cart" data-name="Pizza Napolitana" data-price="32">Adicionar ao Carrinho</button>
+            </div>
+            <div class="pizza">
+                <h3>Pizza Pepperoni</h3>
+                <p>Queijo, pepperoni e molho de tomate</p>
+                <p class="price">R$ 45,00</p>
+                <button class="add-to-cart" data-name="Pizza Pepperoni" data-price="45">Adicionar ao Carrinho</button>
+            </div>
+            <div class="pizza">
+                <h3>Pizza Vegetariana</h3>
+                <p>Legumes variados, queijo e orégano</p>
+                <p class="price">R$ 34,00</p>
+                <button class="add-to-cart" data-name="Pizza Vegetariana" data-price="34">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <div class="beverages">
+            <h2>Cardápio de Bebidas</h2>
+            <div class="beverage">
+                <h3>Refrigerante Lata</h3>
+                <p class="price">R$ 5,00</p>
+                <button class="add-to-cart" data-name="Refrigerante Lata" data-price="5">Adicionar ao Carrinho</button>
+            </div>
+            <div class="beverage">
+                <h3>Água Mineral</h3>
+                <p class="price">R$ 3,00</p>
+                <button class="add-to-cart" data-name="Água Mineral" data-price="3">Adicionar ao Carrinho</button>
+            </div>
+            <div class="beverage">
+                <h3>Suco Natural</h3>
+                <p class="price">R$ 7,00</p>
+                <button class="add-to-cart" data-name="Suco Natural" data-price="7">Adicionar ao Carrinho</button>
+            </div>
+            <div class="beverage">
+                <h3>Cerveja Long Neck</h3>
+                <p class="price">R$ 8,00</p>
+                <button class="add-to-cart" data-name="Cerveja Long Neck" data-price="8">Adicionar ao Carrinho</button>
+            </div>
+            <div class="beverage">
+                <h3>Vinho Taça</h3>
+                <p class="price">R$ 15,00</p>
+                <button class="add-to-cart" data-name="Vinho Taça" data-price="15">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Carrinho de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: R$ <span id="totalPrice">0.00</span></p>
+        </div>
+    </div>
+</body>
+</html>
